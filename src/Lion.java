@@ -1,12 +1,7 @@
 public class Lion extends Animal {
-    private String name;
-
-    public Lion(String name) {
-        this.name = name;
-    }
-
     @Override
-    public void eat(MeatFeed meatFeed) {
-        System.out.println("Lion eat " + meatFeed);
+    public String eat(Feed feed) {
+        return feed instanceof MeatFeed ? "Lion eats " + feed.getClass().getSimpleName()
+                : "Lion does not eat " + feed.getClass().getSimpleName();
     }
 }

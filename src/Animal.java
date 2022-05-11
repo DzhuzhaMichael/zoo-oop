@@ -1,6 +1,4 @@
-public class Animal {
-    public void eat(MeatFeed meatFeed) {
-    }
-    public void eat(PlantFeed plantFeed) {
-    }
+public abstract class Animal {
+    public abstract String eat(Feed feed);
 }
+

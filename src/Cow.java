@@ -1,12 +1,8 @@
-public class Cow extends Animal implements MeatFeed{
-    private String name;
-
-    public Cow(String name) {
-        this.name = name;
-    }
+public class Cow extends Animal implements MeatFeed {
 
     @Override
-    public void eat(PlantFeed plantFeed) {
-        System.out.println("Cow accepted " + plantFeed);
+    public String eat(Feed feed) {
+        return feed instanceof PlantFeed ? "Cow eats " + feed.getClass().getSimpleName()
+                : "Cow does not eat " + feed.getClass().getSimpleName();
     }
 }
