@@ -1,3 +1,6 @@
-public abstract class Animal {
-    public abstract void eat(Feed feed);
+public class Animal {
+    public void eat(MeatFeed meatFeed) {
+    }
+    public void eat(PlantFeed plantFeed) {
+    }
 }

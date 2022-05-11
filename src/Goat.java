@@ -5,8 +5,16 @@ public class Goat extends Animal implements MeatFeed {
         this.name = name;
     }
 
-    @Override
-    public void eat(Feed feed) {
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void eat(PlantFeed plantFeed) {
+        System.out.println("Goat eats " + plantFeed);
     }
 }

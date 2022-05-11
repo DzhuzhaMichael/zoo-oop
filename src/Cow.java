@@ -1,4 +1,4 @@
-public class Cow extends Animal implements MeatFeed {
+public class Cow extends Animal implements MeatFeed{
     private String name;
 
     public Cow(String name) {
@@ -6,7 +6,7 @@ public class Cow extends Animal implements MeatFeed {
     }
 
     @Override
-    public void eat(Feed feed) {
-        System.out.println("Cow accepted " + feed.toString());
+    public void eat(PlantFeed plantFeed) {
+        System.out.println("Cow accepted " + plantFeed);
     }
 }

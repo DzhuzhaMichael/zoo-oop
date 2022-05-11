@@ -1,2 +1,2 @@
-public interface PlantFeed extends Feed{
+public interface PlantFeed extends Feed {
 }
