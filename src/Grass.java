@@ -1,2 +1,2 @@
-public class Grass implements PlantFeed {
+public class Grass implements Feed {
 }
