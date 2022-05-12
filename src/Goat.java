@@ -1,8 +1,6 @@
-public class Goat extends Animal implements MeatFeed {
-
+public class Goat extends Herbivore {
     @Override
-    public String eat(Feed feed) {
-        return feed instanceof PlantFeed ? "Goat eats " + feed.getClass().getSimpleName()
-                : "Goat does not eat " + feed.getClass().getSimpleName();
+    public void eat(Grass feed) {
+        System.out.println("Goat eats " + feed.getClass().getSimpleName());
     }
 }

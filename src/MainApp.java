@@ -5,16 +5,9 @@ public class MainApp {
         Goat goat = new Goat();
         Grass grass = new Grass();
 
-        System.out.println(lion.eat(goat));
-        System.out.println(lion.eat(cow));
-        System.out.println(lion.eat(grass));
-
-        System.out.println(cow.eat(grass));
-        System.out.println(cow.eat(cow));
-        System.out.println(cow.eat(goat));
-
-        System.out.println(goat.eat(grass));
-        System.out.println(goat.eat(goat));
-        System.out.println(goat.eat(cow));
+        lion.eat(cow);
+        lion.eat(goat);
+        cow.eat(grass);
+        goat.eat(grass);
     }
 }

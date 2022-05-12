@@ -1,4 +1,4 @@
-public abstract class Animal {
-    public abstract String eat(Feed feed);
+public abstract class Animal<T extends Feed> {
+    public abstract void eat(T feed);
 }
 
