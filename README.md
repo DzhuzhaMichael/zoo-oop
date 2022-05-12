@@ -6,7 +6,8 @@ inheritances we can implement this feature with the help of interfaces and param
 the Animal - Feed relation (the lion eats cows and goats but does not eat grass etc.).
 
 ## Alternative model
-![](../../Desktop/Schema2.jpg)
+![Schema2](https://user-images.githubusercontent.com/92114777/168110938-9961c8a8-35a5-47bd-b64b-0b8e3d57f506.jpg)
+
 
 
 
