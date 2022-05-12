@@ -1,6 +1,4 @@
-public class Herbivore<T extends Grass> extends Animal<T> implements Feed {
+public abstract class Herbivore<T extends Grass> extends Animal<T> implements Feed {
     @Override
-    public void eat(T feed) {
-        System.out.println("Herbivore eats " + feed);
-    }
+    public abstract void eat(T feed);
 }
