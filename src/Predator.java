@@ -1,4 +1,4 @@
-public abstract class Predator<T extends Herbivore<Grass>> extends Animal<T> {
+public abstract class Predator<T extends MeatFeed> extends Animal<T> {
     @Override
     public abstract void eat(T feed);
 }
