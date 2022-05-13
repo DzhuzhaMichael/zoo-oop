@@ -1,6 +1,6 @@
 public class Lion extends Predator {
     @Override
-    public void eat(Herbivore feed) {
+    public void eat(MeatFeed feed) {
         System.out.println("Lion eats " + feed.getClass().getSimpleName());
     }
 }
